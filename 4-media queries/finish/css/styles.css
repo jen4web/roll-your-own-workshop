@@ -1,0 +1,140 @@
+/* Phase 4: media queries */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	font-size: 100%;
+	font-family: Arial, Geneva, sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Cabin Condensed', sans-serif;
+}
+a {
+	color: #2772B0;
+}
+.wrapper {
+	width: 97%;
+	margin: 0 auto;
+	float: none;
+	background-color: #fff;
+	max-width: 1200px;
+}
+
+div img {
+	width: 100%;
+	max-width: 100%;
+}
+
+
+/* grid system */
+
+/* row class will clear floats from previous row */
+.row:before, 
+.row:after {
+    content:"";
+    display: table;
+    clear:both;
+}
+.col-1-2, .col-1-4 {
+	float: left;
+	width: 20.8333333%;
+	margin-left: 3.333333%;
+	min-height: 1px; 
+	background-color: #ccf;
+}
+.col-2 {
+	float: left;
+	width: 44.9999999%;
+	margin-left: 3.333333%;
+	min-height: 1px; 
+	background-color: #cff;
+}
+.col-3 {
+	float: left;
+	width: 69.1666665%;
+	margin-left: 3.333333%;
+	min-height: 1px; 
+	background-color: #ffc;
+}
+.col-4 {
+	width: 100%;
+	margin-left: 3.333333%;
+	min-height: 1px; 
+	background-color: #fcf;
+}
+
+
+/* media queries */
+
+/* Mobile Landscape Screen Sizes */
+@media only screen and (min-width: 480px) and (max-width: 767px)  {
+ .col-1-2 {
+	float: left;
+	width: 44.9999999%;
+	margin-left: 3.333333%;
+	min-height: 1px; 
+	background-color: #ccf;
+}
+ .col-1-4 {
+	float: left;
+	width: 100%;
+	margin-left: 3.333333%;
+	min-height: 1px; 
+	background-color: #ccf;
+}
+.col-2 {
+	float: left;
+	width: 44.9999999%;
+	margin-left: 3.333333%;
+	min-height: 1px; 
+	background-color: #cff;
+}
+.col-3 {
+	float: left;
+	width: 100%;
+	margin-left: 3.333333%;
+	min-height: 1px; 
+	background-color: #ffc;
+}
+.col-4 {
+	width: 100%;
+	margin-left: 3.333333%;
+	min-height: 1px; 
+	background-color: #fcf;
+}
+
+}
+ 
+
+/* Mobile Portrait Screen Sizes */
+@media only screen and (max-width: 479px) {
+  .col-1-2, 
+  .col-1-4 {
+	width: 100%;
+	margin-left: 0;
+	min-height: 1px; 
+	background-color: #ccf;
+}
+
+.col-2 {
+	width: 100%;
+	margin-left: 0;
+	min-height: 1px; 
+	background-color: #cff;
+}
+.col-3 {
+	width: 100%;
+	margin-left: 0;
+	min-height: 1px; 
+	background-color: #ffc;
+}
+.col-4 {
+	width: 100%;
+	margin-left: 0;
+	min-height: 1px; 
+	background-color: #fcf;
+}
+}

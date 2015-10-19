@@ -1,0 +1,91 @@
+/* Phase 3: full grid system */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	font-size: 100%;
+	font-family: Arial, Geneva, sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Cabin Condensed', sans-serif;
+}
+a {
+	color: #2772B0;
+}
+.wrapper {
+	width: 97%;
+	margin: 0 auto;
+	float: none;
+	background-color: #fff;
+	max-width: 1200px;
+}
+
+div img {
+	width: 100%;
+	max-width: 100%;
+}
+
+
+/* grid system */
+
+/* row class will clear floats from previous row */
+.row:before, 
+.row:after {
+    content:"";
+    display: table;
+    clear:both;
+}
+.col-1 {
+	float: left;
+	width: 20.8333333%;
+	margin-left: 3.333333%;
+	min-height: 1px; 
+	background-color: #ccf;
+}
+.col-2 {
+	float: left;
+	width: 44.9999999%;
+	margin-left: 3.333333%;
+	min-height: 1px; 
+	background-color: #cff;
+}
+.col-3 {
+	float: left;
+	width: 69.1666665%;
+	margin-left: 3.333333%;
+	min-height: 1px; 
+	background-color: #ffc;
+}
+.col-4 {
+	width: 100%;
+	margin-left: 3.333333%;
+	min-height: 1px; 
+	background-color: #fcf;
+}
+
+/* You could efficiently combine some attributes
+of these columns with a different selector.
+Code would then look like this. */
+/*[class*='col-'] {
+	float: left;
+	margin-left: 3.333333%;
+	min-height: 1px;
+}
+.col-1 {
+	width: 20.8333333%;
+}
+.col-2 {
+	width: 44.9999999%;
+}
+.col-3 {
+	width: 69.1666665%;
+}
+.col-4 {
+	width: 100%;
+	min-height: 1px; 
+	float: none;
+	margin-left: 0;
+}

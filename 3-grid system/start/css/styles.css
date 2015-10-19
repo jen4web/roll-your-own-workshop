@@ -1,0 +1,29 @@
+/* Phase 3: full grid system */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	font-size: 100%;
+	font-family: Arial, Geneva, sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Cabin Condensed', sans-serif;
+}
+a {
+	color: #2772B0;
+}
+.wrapper {
+	width: 97%;
+	margin: 0 auto;
+	float: none;
+	background-color: #fff;
+	max-width: 1200px;
+}
+
+div img {
+	width: 100%;
+	max-width: 100%;
+}
